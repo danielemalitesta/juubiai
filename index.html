@@ -3,12 +3,12 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About JuubiAI</title>
+<title>JuubiAI</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -18,26 +18,22 @@
 
 <header>
 
-    <div class="container nav">
+<div class="container nav">
 
-        <div class="logo">
-            JuubiAI
-        </div>
+<div class="logo">
+JuubiAI
+</div>
 
 
-        <nav>
+<nav>
 
-            <a href="#">
-                Home
-            </a>
+<a href="#" class="active">
+About
+</a>
 
-            <a href="#" class="active">
-                About
-            </a>
+</nav>
 
-        </nav>
-
-    </div>
+</div>
 
 </header>
 
@@ -48,10 +44,12 @@
 
 
 
+<!-- HERO -->
+
 <section class="hero">
 
 
-<div class="hero-text">
+<div class="hero-content">
 
 
 <h1>
@@ -72,15 +70,27 @@ any monolithic approach.
 
 
 
-<!-- COLLAGE CARD -->
+
+<!-- FEATURE CARDS -->
 
 
-<div class="collage-card">
+<div class="feature-grid">
 
 
-<div class="collage-label">
+
+<div class="feature-card">
+
+
+<div class="feature-label">
 RESEARCH LAB
 </div>
+
+
+
+<h3>
+Developed with COLLAGE lab
+</h3>
+
 
 
 <p>
@@ -93,11 +103,14 @@ lead by
 </p>
 
 
+
 <a 
+class="button"
 href="https://www.vincenzolomonaco.com/collage-lab"
 target="_blank">
 
-Visit COLLAGE lab →
+Visit COLLAGE lab
+<span>→</span>
 
 </a>
 
@@ -109,33 +122,37 @@ Visit COLLAGE lab →
 
 
 
-<!-- AVAILABILITY CARD -->
+
+<div class="feature-card">
 
 
-<div class="availability-card">
-
-
-<div class="availability-label">
-COMING SOON
+<div class="feature-label">
+AVAILABILITY
 </div>
 
 
+
 <h3>
-JuubiAI will be available soon!
+JuubiAI will be available soon
 </h3>
+
 
 
 <p>
 
-Get in touch with us if you're interested in trying
-JuubiAI or collaborating with the project.
+Interested in trying JuubiAI or collaborating
+with the project? Get in touch with us.
 
 </p>
 
 
-<a href="vlomonaco@luiss.it">
 
-Contact us →
+<a
+class="button"
+href="mailto:YOUR_EMAIL@example.com">
+
+Contact us
+<span>→</span>
 
 </a>
 
@@ -148,15 +165,17 @@ Contact us →
 
 
 
+</div>
 
 
-<div class="logo-container">
 
+
+
+<div class="logo-area">
 
 <img 
 src="juubi-new.png"
 alt="JuubiAI logo">
-
 
 </div>
 
@@ -170,6 +189,9 @@ alt="JuubiAI logo">
 
 
 
+<!-- PIPELINE -->
+
+
 <section>
 
 
@@ -178,15 +200,16 @@ How it works
 </h2>
 
 
-<div class="grid">
+
+<div class="cards">
 
 
 
 <div class="card">
 
-<span>
+<div class="number">
 01
-</span>
+</div>
 
 <h3>
 Query Decomposition
@@ -204,9 +227,9 @@ parallel subtasks — each representing a distinct reasoning unit.
 
 <div class="card">
 
-<span>
+<div class="number">
 02
-</span>
+</div>
 
 <h3>
 Graph Construction
@@ -214,7 +237,7 @@ Graph Construction
 
 <p>
 Dependencies between subtasks are mapped into a
-directed acyclic graph, enabling parallel execution.
+directed acyclic graph enabling parallel execution.
 </p>
 
 </div>
@@ -225,16 +248,16 @@ directed acyclic graph, enabling parallel execution.
 
 <div class="card">
 
-<span>
+<div class="number">
 03
-</span>
+</div>
 
 <h3>
 Domain Routing
 </h3>
 
 <p>
-Each subtask is classified into a semantic domain —
+Each subtask is classified into a semantic domain:
 Climate, Code, Medical, Legal, and more.
 </p>
 
@@ -246,17 +269,17 @@ Climate, Code, Medical, Legal, and more.
 
 <div class="card">
 
-<span>
+<div class="number">
 04
-</span>
+</div>
 
 <h3>
 Model Retrieval
 </h3>
 
 <p>
-Candidate models are retrieved and scored for each
-domain using a model capability index.
+Candidate models are retrieved and scored using
+a capability index.
 </p>
 
 </div>
@@ -267,9 +290,9 @@ domain using a model capability index.
 
 <div class="card">
 
-<span>
+<div class="number">
 05
-</span>
+</div>
 
 <h3>
 Parallel Execution
@@ -288,9 +311,9 @@ streaming partial results.
 
 <div class="card">
 
-<span>
+<div class="number">
 06
-</span>
+</div>
 
 <h3>
 Aggregation
@@ -298,7 +321,7 @@ Aggregation
 
 <p>
 Results from all subtasks are synthesised into
-a single coherent final answer.
+a single coherent answer.
 </p>
 
 </div>
@@ -316,6 +339,9 @@ a single coherent final answer.
 
 
 
+<!-- STACK -->
+
+
 <section>
 
 
@@ -324,8 +350,8 @@ Tech Stack
 </h2>
 
 
-<div class="tags">
 
+<div class="tags">
 
 <span>
 Next.js 14
@@ -363,16 +389,18 @@ Tailwind CSS
 
 
 
-<section class="footer-note">
+<!-- NOTE -->
+
+
+<section class="note">
 
 
 <p>
 
 This is a research prototype — not a production service.
 The pipeline is currently driven by a mock streaming layer
-that simulates real-time model execution.
-The HTTP service layer is architected for drop-in SSE or
-WebSocket integration when a live backend is available.
+that simulates real-time model execution. The HTTP service
+layer is architected for future SSE or WebSocket integration.
 
 </p>
 
