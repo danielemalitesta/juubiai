@@ -1,0 +1,211 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:#0f1117;
+    color:#ececec;
+    font-family:Inter,Arial,sans-serif;
+    line-height:1.6;
+
+}
+
+.container{
+
+    max-width:1150px;
+    margin:auto;
+    padding:0 30px;
+
+}
+
+header{
+
+    border-bottom:1px solid #25262d;
+
+}
+
+.nav{
+
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:22px;
+    font-weight:700;
+
+}
+
+nav{
+
+    display:flex;
+    gap:30px;
+
+}
+
+nav a{
+
+    color:#9aa3b2;
+    text-decoration:none;
+
+}
+
+.active{
+
+    color:white;
+
+}
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:80px;
+
+    padding:90px 0;
+
+}
+
+.hero-text{
+
+    max-width:620px;
+
+}
+
+.hero h1{
+
+    font-size:54px;
+    margin-bottom:30px;
+
+}
+
+.hero p{
+
+    color:#b7bcc6;
+    font-size:18px;
+
+}
+
+.hero img{
+
+    width:280px;
+}
+
+section{
+
+    margin-bottom:90px;
+
+}
+
+h2{
+
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#8b92a3;
+    margin-bottom:30px;
+
+}
+
+.grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:22px;
+
+}
+
+.card{
+
+    background:#181b22;
+    border:1px solid #2a2e38;
+    border-radius:12px;
+    padding:28px;
+
+}
+
+.card span{
+
+    color:#7b8496;
+    font-size:11px;
+    letter-spacing:2px;
+
+}
+
+.card h3{
+
+    margin:10px 0 14px;
+
+}
+
+.card p{
+
+    color:#b4bac4;
+    font-size:15px;
+
+}
+
+.tags{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+}
+
+.tags span{
+
+    border:1px solid #303540;
+    padding:8px 16px;
+    border-radius:100px;
+    color:#c6ccd7;
+    font-size:14px;
+
+}
+
+.footer-note{
+
+    border-top:1px solid #2a2e38;
+    padding-top:50px;
+    max-width:700px;
+
+}
+
+.footer-note p{
+
+    color:#98a0b1;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+.hero img{
+
+    width:220px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+}
