@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About JuubiAI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="container nav">
+
+        <div class="logo">
+            JuubiAI
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a class="active" href="#">About</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>About JuubiAI</h1>
+
+<p>
+
+JuubiAI is a research prototype exploring intelligent query routing across
+specialised AI models. The core idea: no single model excels at everything.
+By decomposing complex queries and routing each piece to the best-suited model,
+we obtain higher quality answers than any monolithic approach.
+
+</p>
+
+</div>
+
+<img src="juubi-new.png" alt="JuubiAI">
+
+</section>
+
+<section>
+
+<h2>How it works</h2>
+
+<div class="grid">
+
+<div class="card">
+<span>01</span>
+<h3>Query Decomposition</h3>
+<p>Complex queries are decomposed into independent reasoning subtasks.</p>
+</div>
+
+<div class="card">
+<span>02</span>
+<h3>Graph Construction</h3>
+<p>Dependencies become a directed acyclic graph enabling parallel execution.</p>
+</div>
+
+<div class="card">
+<span>03</span>
+<h3>Domain Routing</h3>
+<p>Each task is classified into Climate, Medical, Legal, Code and more.</p>
+</div>
+
+<div class="card">
+<span>04</span>
+<h3>Model Retrieval</h3>
+<p>Models are retrieved from a capability index according to domain.</p>
+</div>
+
+<div class="card">
+<span>05</span>
+<h3>Parallel Execution</h3>
+<p>Selected models execute concurrently while streaming partial results.</p>
+</div>
+
+<div class="card">
+<span>06</span>
+<h3>Aggregation</h3>
+<p>Outputs are synthesised into one coherent final answer.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Tech Stack</h2>
+
+<div class="tags">
+
+<span>Next.js 14</span>
+<span>FastAPI</span>
+<span>ReactFlow</span>
+<span>Dagre</span>
+<span>TypeScript</span>
+<span>Tailwind CSS</span>
+
+</div>
+
+</section>
+
+<section class="footer-note">
+
+<p>
+
+This is a research prototype — not a production service. The pipeline is
+currently driven by a mock streaming layer that simulates real-time model
+execution. The architecture is designed for future SSE/WebSocket integration.
+
+</p>
+
+</section>
+
+</main>
+
+</body>
+
+</html>
