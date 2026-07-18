@@ -1,4 +1,4 @@
-*{
+* {
 
     margin:0;
     padding:0;
@@ -6,206 +6,414 @@
 
 }
 
-body{
+
+
+body {
 
     background:#0f1117;
     color:#ececec;
-    font-family:Inter,Arial,sans-serif;
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
     line-height:1.6;
 
 }
 
-.container{
 
-    max-width:1150px;
+
+.container {
+
+    max-width:1200px;
     margin:auto;
     padding:0 30px;
 
 }
 
-header{
 
-    border-bottom:1px solid #25262d;
+
+
+
+/* HEADER */
+
+
+header {
+
+    border-bottom:1px solid #252936;
 
 }
 
-.nav{
+
+.nav {
 
     height:70px;
+
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
 
 }
 
-.logo{
+
+
+.logo {
 
     font-size:22px;
     font-weight:700;
 
 }
 
-nav{
+
+
+nav {
 
     display:flex;
     gap:30px;
 
 }
 
-nav a{
 
-    color:#9aa3b2;
+nav a {
+
     text-decoration:none;
+    color:#8f96a6;
 
 }
 
-.active{
+
+
+nav a.active {
 
     color:white;
 
 }
 
-.hero{
+
+
+
+
+
+/* HERO */
+
+
+.hero {
 
     display:flex;
-    justify-content:space-between;
+
     align-items:center;
+    justify-content:space-between;
+
     gap:80px;
 
     padding:90px 0;
 
 }
 
-.hero-text{
 
-    max-width:620px;
 
-}
+.hero-text {
 
-.hero h1{
-
-    font-size:54px;
-    margin-bottom:30px;
+    max-width:650px;
 
 }
 
-.hero p{
 
-    color:#b7bcc6;
+
+.hero h1 {
+
+    font-size:56px;
+
+    margin-bottom:25px;
+
+    letter-spacing:-2px;
+
+}
+
+
+
+.hero p {
+
+    color:#b6bcc8;
+
     font-size:18px;
 
 }
 
-.hero img{
 
-    width:280px;
+
+.hero img {
+
+    width:300px;
+
+    opacity:.9;
+
 }
 
-section{
+
+
+
+
+
+
+/* SECTIONS */
+
+
+section {
 
     margin-bottom:90px;
 
 }
 
-h2{
 
-    font-size:13px;
+
+h2 {
+
+    font-size:11px;
+
     text-transform:uppercase;
-    letter-spacing:2px;
-    color:#8b92a3;
+
+    letter-spacing:3px;
+
+    color:#8b93a5;
+
     margin-bottom:30px;
 
 }
 
-.grid{
+
+
+
+
+
+
+/* PIPELINE */
+
+
+.grid {
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(300px,1fr)
+        );
+
     gap:22px;
 
 }
 
-.card{
+
+
+.card {
 
     background:#181b22;
-    border:1px solid #2a2e38;
+
+    border:1px solid #292e3a;
+
     border-radius:12px;
+
     padding:28px;
 
 }
 
-.card span{
 
-    color:#7b8496;
-    font-size:11px;
-    letter-spacing:2px;
 
-}
+.card span {
 
-.card h3{
+    font-size:10px;
 
-    margin:10px 0 14px;
+    letter-spacing:3px;
+
+    color:#8991a3;
 
 }
 
-.card p{
 
-    color:#b4bac4;
-    font-size:15px;
 
-}
+.card h3 {
 
-.tags{
+    margin:12px 0;
 
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
+    font-size:16px;
 
 }
 
-.tags span{
 
-    border:1px solid #303540;
-    padding:8px 16px;
-    border-radius:100px;
-    color:#c6ccd7;
+
+.card p {
+
+    color:#aeb5c3;
+
     font-size:14px;
 
 }
 
-.footer-note{
 
-    border-top:1px solid #2a2e38;
-    padding-top:50px;
-    max-width:700px;
+
+
+
+
+
+/* TECH TAGS */
+
+
+.tags {
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
 
 }
 
-.footer-note p{
 
-    color:#98a0b1;
+
+.tags span {
+
+    border:1px solid #303642;
+
+    border-radius:50px;
+
+    padding:8px 16px;
+
+    color:#c4cad6;
+
+    font-size:14px;
 
 }
+
+
+
+
+
+
+
+
+/* COLLAGE BOX */
+
+
+.lab-box {
+
+
+    background:#181b22;
+
+    border:1px solid #292e3a;
+
+    border-radius:12px;
+
+    padding:32px;
+
+    max-width:750px;
+
+
+}
+
+
+
+.lab-box p {
+
+    color:#c6ccd7;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.lab-box strong {
+
+    color:white;
+
+}
+
+
+
+.lab-box a {
+
+    color:#8fa8ff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+}
+
+
+
+.lab-box a:hover {
+
+    text-decoration:underline;
+
+}
+
+
+
+
+
+
+
+/* FOOTER NOTE */
+
+
+.footer-note {
+
+    border-top:1px solid #292e3a;
+
+    padding-top:40px;
+
+    max-width:750px;
+
+}
+
+
+
+.footer-note p {
+
+    color:#929aaa;
+
+    font-size:13px;
+
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
 
 @media(max-width:900px){
 
-.hero{
+
+.hero {
 
     flex-direction:column;
+
     text-align:center;
 
 }
 
-.hero img{
+
+
+.hero h1 {
+
+    font-size:42px;
+
+}
+
+
+
+.hero img {
 
     width:220px;
 
 }
 
-.hero h1{
-
-    font-size:42px;
-
-}
 
 }
