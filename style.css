@@ -11,7 +11,9 @@
 body {
 
     background:#0f1117;
+
     color:#ececec;
+
     font-family:
         Inter,
         Arial,
@@ -27,10 +29,13 @@ body {
 .container {
 
     max-width:1200px;
+
     margin:auto;
+
     padding:0 30px;
 
 }
+
 
 
 
@@ -51,8 +56,10 @@ header {
     height:70px;
 
     display:flex;
-    align-items:center;
+
     justify-content:space-between;
+
+    align-items:center;
 
 }
 
@@ -61,6 +68,7 @@ header {
 .logo {
 
     font-size:22px;
+
     font-weight:700;
 
 }
@@ -70,15 +78,18 @@ header {
 nav {
 
     display:flex;
+
     gap:30px;
 
 }
 
 
+
 nav a {
 
     text-decoration:none;
-    color:#8f96a6;
+
+    color:#8e96a7;
 
 }
 
@@ -95,19 +106,24 @@ nav a.active {
 
 
 
+
 /* HERO */
 
 
 .hero {
 
+
     display:flex;
 
-    align-items:center;
     justify-content:space-between;
+
+    align-items:center;
 
     gap:80px;
 
+
     padding:90px 0;
+
 
 }
 
@@ -125,9 +141,9 @@ nav a.active {
 
     font-size:56px;
 
-    margin-bottom:25px;
-
     letter-spacing:-2px;
+
+    margin-bottom:25px;
 
 }
 
@@ -135,21 +151,165 @@ nav a.active {
 
 .hero p {
 
-    color:#b6bcc8;
-
     font-size:18px;
+
+    color:#b7bdc9;
 
 }
 
 
 
-.hero img {
+.logo-container img {
 
     width:300px;
 
     opacity:.9;
 
 }
+
+
+
+
+
+
+
+/* COLLAGE CARD */
+
+
+.collage-card {
+
+
+    margin-top:35px;
+
+
+    padding:28px;
+
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #181b22,
+            #12151b
+        );
+
+
+    border:1px solid #303746;
+
+
+    border-radius:16px;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+.collage-card::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:0;
+
+    top:0;
+
+
+    width:4px;
+
+
+    height:100%;
+
+
+    background:#8fa8ff;
+
+
+}
+
+
+
+.collage-label {
+
+
+    color:#8fa8ff;
+
+
+    font-size:10px;
+
+
+    letter-spacing:3px;
+
+
+    font-weight:600;
+
+
+    margin-bottom:14px;
+
+
+}
+
+
+
+.collage-card p {
+
+
+    color:#c7ceda;
+
+
+    font-size:15px;
+
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+.collage-card strong {
+
+    color:white;
+
+}
+
+
+
+.collage-card a {
+
+
+    color:#9eb5ff;
+
+
+    text-decoration:none;
+
+
+    font-size:14px;
+
+
+    transition:.2s;
+
+
+}
+
+
+
+.collage-card a:hover {
+
+
+    color:white;
+
+
+}
+
 
 
 
@@ -170,18 +330,23 @@ section {
 
 h2 {
 
+
     font-size:11px;
 
-    text-transform:uppercase;
 
     letter-spacing:3px;
 
+
+    text-transform:uppercase;
+
+
     color:#8b93a5;
+
 
     margin-bottom:30px;
 
-}
 
+}
 
 
 
@@ -193,7 +358,9 @@ h2 {
 
 .grid {
 
+
     display:grid;
+
 
     grid-template-columns:
         repeat(
@@ -201,7 +368,9 @@ h2 {
             minmax(300px,1fr)
         );
 
+
     gap:22px;
+
 
 }
 
@@ -209,13 +378,18 @@ h2 {
 
 .card {
 
+
     background:#181b22;
+
 
     border:1px solid #292e3a;
 
+
     border-radius:12px;
 
+
     padding:28px;
+
 
 }
 
@@ -223,11 +397,15 @@ h2 {
 
 .card span {
 
+
     font-size:10px;
+
 
     letter-spacing:3px;
 
+
     color:#8991a3;
+
 
 }
 
@@ -235,9 +413,12 @@ h2 {
 
 .card h3 {
 
+
     margin:12px 0;
 
+
     font-size:16px;
+
 
 }
 
@@ -245,9 +426,12 @@ h2 {
 
 .card p {
 
-    color:#aeb5c3;
+
+    color:#adb5c3;
+
 
     font-size:14px;
+
 
 }
 
@@ -257,16 +441,21 @@ h2 {
 
 
 
-/* TECH TAGS */
+
+/* STACK */
 
 
 .tags {
 
+
     display:flex;
+
 
     flex-wrap:wrap;
 
+
     gap:12px;
+
 
 }
 
@@ -274,15 +463,21 @@ h2 {
 
 .tags span {
 
+
     border:1px solid #303642;
+
 
     border-radius:50px;
 
+
     padding:8px 16px;
+
+
+    font-size:14px;
+
 
     color:#c4cad6;
 
-    font-size:14px;
 
 }
 
@@ -292,80 +487,20 @@ h2 {
 
 
 
-
-/* COLLAGE BOX */
-
-
-.lab-box {
-
-
-    background:#181b22;
-
-    border:1px solid #292e3a;
-
-    border-radius:12px;
-
-    padding:32px;
-
-    max-width:750px;
-
-
-}
-
-
-
-.lab-box p {
-
-    color:#c6ccd7;
-
-    margin-bottom:15px;
-
-}
-
-
-
-.lab-box strong {
-
-    color:white;
-
-}
-
-
-
-.lab-box a {
-
-    color:#8fa8ff;
-
-    text-decoration:none;
-
-    font-size:14px;
-
-}
-
-
-
-.lab-box a:hover {
-
-    text-decoration:underline;
-
-}
-
-
-
-
-
-
-
-/* FOOTER NOTE */
+/* FOOTER */
 
 
 .footer-note {
 
+
     border-top:1px solid #292e3a;
+
 
     padding-top:40px;
 
+
     max-width:750px;
+
 
 }
 
@@ -373,11 +508,15 @@ h2 {
 
 .footer-note p {
 
+
     color:#929aaa;
+
 
     font-size:13px;
 
+
 }
+
 
 
 
@@ -393,9 +532,12 @@ h2 {
 
 .hero {
 
+
     flex-direction:column;
 
+
     text-align:center;
+
 
 }
 
@@ -403,17 +545,22 @@ h2 {
 
 .hero h1 {
 
+
     font-size:42px;
+
 
 }
 
 
 
-.hero img {
+.logo-container img {
+
 
     width:220px;
 
+
 }
+
 
 
 }
