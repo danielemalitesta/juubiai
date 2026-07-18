@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>About JuubiAI</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -21,85 +24,204 @@
 
         <nav>
             <a href="#">Home</a>
-            <a class="active" href="#">About</a>
+            <a href="#" class="active">About</a>
         </nav>
 
     </div>
 
 </header>
 
+
+
 <main class="container">
+
+
+<!-- HERO -->
 
 <section class="hero">
 
-<div class="hero-text">
 
-<h1>About JuubiAI</h1>
+    <div class="hero-text">
+
+        <h1>
+            About JuubiAI
+        </h1>
+
+
+        <p>
+            JuubiAI is a research prototype exploring intelligent query routing
+            across specialised AI models.
+            The core idea: no single model excels at everything.
+            By decomposing complex queries and routing each piece to the
+            best-suited model, we can achieve higher quality answers than
+            any monolithic approach.
+        </p>
+
+
+    </div>
+
+
+
+    <div>
+
+        <img 
+            src="juubi-new.png"
+            alt="JuubiAI logo"
+        >
+
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- PIPELINE -->
+
+<section>
+
+
+<h2>
+    How it works
+</h2>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<span>01</span>
+
+<h3>
+Query Decomposition
+</h3>
 
 <p>
-
-JuubiAI is a research prototype exploring intelligent query routing across
-specialised AI models. The core idea: no single model excels at everything.
-By decomposing complex queries and routing each piece to the best-suited model,
-we obtain higher quality answers than any monolithic approach.
-
+Complex queries are broken down into independent,
+parallel subtasks — each representing a distinct reasoning unit.
 </p>
 
 </div>
 
-<img src="juubi-new.png" alt="JuubiAI">
 
-</section>
 
-<section>
-
-<h2>How it works</h2>
-
-<div class="grid">
 
 <div class="card">
-<span>01</span>
-<h3>Query Decomposition</h3>
-<p>Complex queries are decomposed into independent reasoning subtasks.</p>
-</div>
 
-<div class="card">
 <span>02</span>
-<h3>Graph Construction</h3>
-<p>Dependencies become a directed acyclic graph enabling parallel execution.</p>
+
+<h3>
+Graph Construction
+</h3>
+
+<p>
+Dependencies between subtasks are mapped into a
+directed acyclic graph, enabling parallel execution.
+</p>
+
 </div>
 
+
+
+
+
 <div class="card">
+
 <span>03</span>
-<h3>Domain Routing</h3>
-<p>Each task is classified into Climate, Medical, Legal, Code and more.</p>
+
+<h3>
+Domain Routing
+</h3>
+
+<p>
+Each subtask is classified into a semantic domain:
+Climate, Code, Medical, Legal, and more.
+</p>
+
 </div>
 
+
+
+
+
 <div class="card">
+
 <span>04</span>
-<h3>Model Retrieval</h3>
-<p>Models are retrieved from a capability index according to domain.</p>
+
+<h3>
+Model Retrieval
+</h3>
+
+<p>
+Candidate models are retrieved and scored according
+to their domain capabilities.
+</p>
+
 </div>
 
+
+
+
+
 <div class="card">
+
 <span>05</span>
-<h3>Parallel Execution</h3>
-<p>Selected models execute concurrently while streaming partial results.</p>
+
+<h3>
+Parallel Execution
+</h3>
+
+<p>
+Subtasks execute concurrently on selected models,
+streaming partial results as they complete.
+</p>
+
 </div>
+
+
+
+
 
 <div class="card">
+
 <span>06</span>
-<h3>Aggregation</h3>
-<p>Outputs are synthesised into one coherent final answer.</p>
-</div>
+
+<h3>
+Aggregation
+</h3>
+
+<p>
+Results from all subtasks are synthesised into
+a single coherent final answer.
+</p>
 
 </div>
+
+
+</div>
+
 
 </section>
 
+
+
+
+
+
+<!-- TECH STACK -->
+
+
 <section>
 
-<h2>Tech Stack</h2>
+
+<h2>
+Tech Stack
+</h2>
+
 
 <div class="tags">
 
@@ -110,23 +232,76 @@ we obtain higher quality answers than any monolithic approach.
 <span>TypeScript</span>
 <span>Tailwind CSS</span>
 
+
 </div>
+
 
 </section>
 
-<section class="footer-note">
+
+
+
+
+
+
+<!-- COLLAGE LAB -->
+
+
+<section class="lab-box">
+
 
 <p>
 
-This is a research prototype — not a production service. The pipeline is
-currently driven by a mock streaming layer that simulates real-time model
-execution. The architecture is designed for future SSE/WebSocket integration.
+JuubiAI is proudly brought to you by the
+<strong>COLLAGE lab</strong>
+lead by
+<strong>Vincenzo Lomonaco</strong>.
 
 </p>
 
+
+<a 
+href="https://www.vincenzolomonaco.com/collage-lab"
+target="_blank">
+
+https://www.vincenzolomonaco.com/collage-lab
+
+</a>
+
+
 </section>
 
+
+
+
+
+
+
+
+<!-- RESEARCH NOTE -->
+
+
+<section class="footer-note">
+
+
+<p>
+
+This is a research prototype — not a production service.
+The pipeline is currently driven by a mock streaming layer
+that simulates real-time model execution.
+The HTTP service layer is architected for drop-in SSE or
+WebSocket integration when a live backend is available.
+
+</p>
+
+
+</section>
+
+
+
+
 </main>
+
 
 </body>
 
